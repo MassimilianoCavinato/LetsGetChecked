@@ -8,7 +8,7 @@ import { CommentInterface } from '../interfaces/comment.interface';
 export class BlogService {
 
   private _api = axios.create({
-    baseURL: "http://localhost:9003/",
+    baseURL: "http://localhost:9001/",
     timeout: 1000,
   });
 

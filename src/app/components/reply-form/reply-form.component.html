@@ -1,0 +1,19 @@
+<mat-form-field style='width: 100%; padding: 16px;'>
+    <mat-label>Leave a comment ( {{ content.length }} / 300 )</mat-label>
+    <input 
+        type="text"
+        [(ngModel)]="content"
+        matInput 
+        placeholder="Ex. I feel like ..." 
+        autocomplete="off"
+        maxlength="300"
+    />
+    <button 
+        [disabled]="!validityCheck(content)"
+        (click)="addComment()"
+        mat-icon-button color='primary' 
+        matSuffix
+    >
+        <mat-icon>send</mat-icon>
+    </button>
+</mat-form-field>

@@ -1,0 +1,46 @@
+<div class='indented'>
+    <mat-card class="comment-container">
+        <mat-card-header>
+            <div mat-card-avatar>
+                <mat-icon  style='font-size: 56px;'>person</mat-icon>
+            </div>
+            <mat-card-title >
+                {{ user }} 
+            </mat-card-title>
+            <mat-card-subtitle>{{ date }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{ content }}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button 
+                [disabled]="children.length === 0"
+                mat-button
+            >   
+                REPLIES: {{ children.length }}
+            </button>
+            <button 
+                mat-raised-button
+                (click)="setReplyBox()"
+                class='pull-right'
+            >
+                REPLY
+            </button>
+        </mat-card-actions >
+        <mat-card-footer *ngIf="replyBox === id">
+            <app-reply-form
+                [postId]="postId"
+                [parent_id]="id"
+            >
+            </app-reply-form>
+        </mat-card-footer>
+    </mat-card>
+    <app-comment-item
+        *ngFor="let comment of children" 
+        [comment]="comment"
+        [replyBox]="replyBox"
+    >
+    </app-comment-item>
+</div>

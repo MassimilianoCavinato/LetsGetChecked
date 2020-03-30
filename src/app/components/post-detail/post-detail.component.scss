@@ -1,0 +1,26 @@
+.container{
+    .post-detail{
+        border: 1px solid #bbb;
+        border-radius: 4px 4px 0px 0px;
+        padding: 8px;
+    }
+    .footer{
+        font-size: 0.7em;
+        text-align: right;
+        .author{
+            font-weight: bold;
+        }
+        button{
+            float: right;
+        }
+        
+    }
+    .post-detail-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px;
+        border: 1px solid #bbb;
+        border-top: none;
+    }
+}

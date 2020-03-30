@@ -1,0 +1,19 @@
+.indented{
+    padding-left: 16px;
+    border-left: 1px dashed gray;
+    mat-card-header{
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    .comment-container{
+        margin-top: 2px;
+        word-wrap: break-word;
+        .reply-counter{
+            display: inline;
+            background-color: green;
+            padding: 8px;
+            margin-bottom: 12px;
+        }
+    }
+}

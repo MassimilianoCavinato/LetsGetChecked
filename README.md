@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
-NOTE: this is just the client side of the application as specified in the code challange, therefore the json-server must be launche d separately on your machine.
+NOTE: this is just the client side of the application as specified in the code challange, therefore the json-server must be launched separately on your machine.
 
 # Get Started
 - make sure you have node installed

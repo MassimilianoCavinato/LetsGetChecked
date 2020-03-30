@@ -2,12 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
-## Development server
+NOTE: this is just the client side of the application as specified in the code challange, therefore the json-server must be launche d separately on your machine.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-.
+# Get Started
+= make sure you have node installed
+- clone repo to your computer
+- open a terminal window from the cloned project
+- run "npm install" to install the application
+- run "npm start" to start the application
+- open browser at "localhost:4200" (make sure the json-server app is running separately on the same machine )
+- run "ng test" to run unit tests

@@ -2,13 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
-NOTE: this is just the client side of the application as specified in the code challange, therefore the json-server must be launched separately on your machine.
+NOTE: json-server has been moved into this repo and it will be launched in parallel with the client application.
+
+PORT NUMBER HAS BEEN CHANGED to 9003 because i have other applications using the same port on my computer that are in use for work and I don't want to shut down.
+
 
 # Get Started
 - make sure you have node installed
 - clone repo to your computer
 - open a terminal window from the cloned project
 - run "npm install" to install the application
-- run "npm start" to start the application ( please note that the very first time you start it it will take 1 minute to compile )
-- open browser at "localhost:4200" (make sure the json-server app is running separately on the same machine )
-- run "ng test" to run unit tests
+- run "npm start" ( this should start the api server on port 9003 instead of 9001, and as well launch your browser at localhost:9003 )

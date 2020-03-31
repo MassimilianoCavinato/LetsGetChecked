@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios'; // <-- this is not that different from the classic jQuery call
-import { Observable, BehaviorSubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { PostInterface } from '../interfaces/post.interface';
 import { CommentInterface } from '../interfaces/comment.interface';
 
+@Injectable({
+  providedIn: 'root'
+})
 
 export class BlogService {
 
   private _api = axios.create({
-    baseURL: "http://localhost:9001/",
+    baseURL: "http://localhost:9003/",
     timeout: 1000,
   });
 

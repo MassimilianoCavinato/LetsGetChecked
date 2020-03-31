@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "concurrently \"npm run api\" \"ng serve --open\"",
+    "api": "json-server --watch api/db.json --port 9003",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,6 +24,8 @@
     "@angular/router": "~9.0.5",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "concurrently": "^5.1.0",
+    "json-server": "^0.16.1",
     "performant-array-to-tree": "^1.7.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

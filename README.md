@@ -13,4 +13,4 @@ PORT NUMBER HAS BEEN CHANGED to 9003 because i have other applications using the
 - open a terminal window from the cloned project
 - run "npm install" to install the application
 - run "npm start" ( this should start the api server on port 9003 instead of 9001, and as well launch your browser at localhost:9003 )
--run "ng test" to launch unit tests
+- run "ng test" to launch unit tests

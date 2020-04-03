@@ -23,4 +23,15 @@ describe('ReplyFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have only one button', () => {
+    let html_collection = document.getElementsByTagName('button');
+    expect(html_collection.length).toBe(1);
+  });
+
+  it('should have "send" as text in the button', () => {
+    let html_collection = document.getElementsByTagName('button');
+    expect(html_collection[0].innerText).toBe("send");
+  });
+  
 });

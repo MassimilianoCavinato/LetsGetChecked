@@ -23,4 +23,11 @@ describe('PostItemComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('component title should be a string',  async(() => {
+    component.ngOnInit();
+    fixture.detectChanges();
+    expect(typeof(component.title)).toEqual('string');
+  }));
+
 });

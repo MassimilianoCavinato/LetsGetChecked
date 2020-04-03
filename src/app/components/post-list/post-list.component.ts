@@ -11,7 +11,7 @@ export class PostListComponent implements OnInit {
   public posts = [];
 
   constructor( private _blogService: BlogService ) { }
-
+  
   ngOnInit() {
     
     this._blogService.getPosts()

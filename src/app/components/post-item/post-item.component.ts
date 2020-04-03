@@ -8,11 +8,11 @@ import { PostInterface } from '../../interfaces/post.interface';
 })
 export class PostItemComponent implements OnInit {
   @Input() post: PostInterface;
-  public id;
-  public title;
-  public author;
-  public publish_date;
-  public description;
+  public id: number;
+  public title: string = "";
+  public author: string;
+  public publish_date: string;
+  public description: string;
 
   constructor() { }
 
@@ -23,7 +23,6 @@ export class PostItemComponent implements OnInit {
       this.author = this.post.author;
       this.publish_date = this.post.publish_date;
       this.description = this.post.description;
-      
     }
   }
 }

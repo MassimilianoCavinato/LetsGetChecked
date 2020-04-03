@@ -31,4 +31,8 @@ describe('PostDetailComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have an empty list of comments when it\'s constructed', () => {
+    expect(component.commentsTree.length).toBe(0);
+  })
 });

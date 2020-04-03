@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed  } from '@angular/core/testing';
 
 import { Error404Component } from './error404.component';
 
@@ -21,5 +21,10 @@ describe('Error404Component', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have only one element with class "error-404"', () => {
+    let html_collection= document.getElementsByClassName('error-404');
+    expect(html_collection.length).toBe(1);
   });
 });

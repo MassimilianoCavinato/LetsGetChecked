@@ -1,6 +1,6 @@
 export interface PostInterface {
     id: number,
-    title: number,
+    title: string,
     author: string,
     publish_date: string,
     slug: string,

@@ -12,7 +12,7 @@ export class BlogService {
 
   private _api = axios.create({
     baseURL: "http://localhost:9003/",
-    timeout: 1000,
+    timeout: 6000,
   });
 
   private _posts = new BehaviorSubject<PostInterface[]>([]);

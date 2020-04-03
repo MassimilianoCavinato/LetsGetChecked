@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BlogService } from '../../services/blog.service';
+import { CommentInterface } from '../../interfaces/comment.interface';
 
 @Component({
   selector: 'app-comment-item',
@@ -12,13 +13,13 @@ export class CommentItemComponent implements OnInit {
   @Input() comment : any;
   @Input() replyBox: number;
 
-  public postId;
-  public id;
-  public parent_id;
-  public user;
-  public date;
-  public content;
-  public children = [];
+  public postId: number;
+  public id : number;
+  public parent_id: number| null;
+  public user: string;
+  public date : string;
+  public content : string;
+  public children : CommentInterface[] = [];
 
   constructor(
     private _blogService: BlogService

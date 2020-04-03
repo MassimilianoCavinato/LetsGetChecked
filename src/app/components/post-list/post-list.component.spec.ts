@@ -24,7 +24,8 @@ describe('PostListComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should display list posts', () => {
-    
+  it('should have an empty list of posts when it\'s constructed', () => {
+    expect(component.posts.length).toEqual(0);
   });
+  
 });
